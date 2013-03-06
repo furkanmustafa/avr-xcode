@@ -1,0 +1,154 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		DC8AC3A616E76DBA00299130 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		DC8AC3AD16E7733000299130 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DC8AC39A16E76D9B00299130 = {
+			isa = PBXGroup;
+			children = (
+				DC8AC3A716E76DC500299130 /* Code */,
+				DC8AC3A516E76DA700299130 /* Scripts */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8AC3A516E76DA700299130 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DC8AC3A616E76DBA00299130 /* build.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DC8AC3A716E76DC500299130 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				DC8AC3AD16E7733000299130 /* main.c */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		DC8AC39F16E76D9B00299130 /* avr-xcode */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = DC8AC3A216E76D9B00299130 /* Build configuration list for PBXLegacyTarget "avr-xcode" */;
+			buildPhases = (
+			);
+			buildToolPath = ./build.sh;
+			buildWorkingDirectory = "$(SRCROOT)";
+			dependencies = (
+			);
+			name = avr-xcode;
+			passBuildSettingsInEnvironment = 1;
+			productName = avr-xcode;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		DC8AC39B16E76D9B00299130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = fume;
+			};
+			buildConfigurationList = DC8AC39E16E76D9B00299130 /* Build configuration list for PBXProject "avr-xcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC8AC39A16E76D9B00299130;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8AC39F16E76D9B00299130 /* avr-xcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		DC8AC3A016E76D9B00299130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/avr-libc/1.8.0/avr/include",
+					"\"$(SRCROOT)\"",
+				);
+			};
+			name = Debug;
+		};
+		DC8AC3A116E76D9B00299130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/avr-libc/1.8.0/avr/include",
+					"\"$(SRCROOT)\"",
+				);
+			};
+			name = Release;
+		};
+		DC8AC3A316E76D9B00299130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASFLAGS = "-Wa,-adhlns=$(<:.S=.lst),-gstabs";
+				AVRDUDE_PROGRAMMER = usbtiny;
+				CFLAGS = "-g -mmcu=$(MCU) -Wall -O${OPTIMIZATION} -mcall-prologues";
+				FORMAT = ihex;
+				LDFLAGS = "-Wl,-Map=$(TARGET).map,--cref";
+				MCU = atmega16;
+				OPTIMIZATION = s;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC8AC3A416E76D9B00299130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASFLAGS = "-Wa,-adhlns=$(<:.S=.lst),-gstabs";
+				AVRDUDE_PROGRAMMER = usbtiny;
+				CFLAGS = "-g -mmcu=$(MCU) -Wall -O${OPTIMIZATION} -mcall-prologues";
+				FORMAT = ihex;
+				LDFLAGS = "-Wl,-Map=$(TARGET).map,--cref";
+				MCU = atmega16;
+				OPTIMIZATION = s;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8AC39E16E76D9B00299130 /* Build configuration list for PBXProject "avr-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8AC3A016E76D9B00299130 /* Debug */,
+				DC8AC3A116E76D9B00299130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8AC3A216E76D9B00299130 /* Build configuration list for PBXLegacyTarget "avr-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8AC3A316E76D9B00299130 /* Debug */,
+				DC8AC3A416E76D9B00299130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC8AC39B16E76D9B00299130 /* Project object */;
+}
