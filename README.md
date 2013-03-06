@@ -19,11 +19,11 @@ To do that, use either `homebrew` or `crosspack-avr`;
 
 **Crosspack-AVR**
 
-  http://www.obdev.at/products/crosspack/index.html
+http://www.obdev.at/products/crosspack/index.html
 
 **homebrew** ( see https://github.com/larsimmisch/homebrew-avr noted 2013.03.06 )
 
-  brew install avrdude
+	brew install avrdude
 	brew tap larsimmisch/avr
 	brew install avr-gcc avr-libc avr-binutils
 
