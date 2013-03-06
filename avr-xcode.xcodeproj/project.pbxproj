@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		DC21E42416E7967100A88E1C /* avr-xcode.hex */ = {isa = PBXFileReference; lastKnownFileType = text; path = "avr-xcode.hex"; sourceTree = "<group>"; };
 		DC8AC3A616E76DBA00299130 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		DC8AC3AD16E7733000299130 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		DC21E42516E7967600A88E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC21E42416E7967100A88E1C /* avr-xcode.hex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DC8AC39A16E76D9B00299130 = {
 			isa = PBXGroup;
 			children = (
+				DC21E42516E7967600A88E1C /* Products */,
 				DC8AC3A716E76DC500299130 /* Code */,
 				DC8AC3A516E76DA700299130 /* Scripts */,
 			);
@@ -49,9 +59,9 @@
 			buildWorkingDirectory = "$(SRCROOT)";
 			dependencies = (
 			);
-			name = avr-xcode;
+			name = "avr-xcode";
 			passBuildSettingsInEnvironment = 1;
-			productName = avr-xcode;
+			productName = "avr-xcode";
 		};
 /* End PBXLegacyTarget section */
 
