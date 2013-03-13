@@ -40,8 +40,23 @@
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <PathRunnable
-         FilePath = "/Users/furkan/Library/Developer/Xcode/DerivedData/avr-xcode-haajejnsljdnxvfgmyvstjuqjkur/Build/Products/loader">
+         FilePath = "/bin/sh">
       </PathRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DC8AC39F16E76D9B00299130"
+            BuildableName = "avr-xcode"
+            BlueprintName = "avr-xcode"
+            ReferencedContainer = "container:avr-xcode.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-c &quot;${BUILD_DIR}/loader&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
